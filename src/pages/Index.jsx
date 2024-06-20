@@ -1,17 +1,28 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, Text, VStack, Heading, Box } from "@chakra-ui/react";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+    <Container centerContent maxW="container.md" py={10}>
+      <VStack spacing={8}>
+        <Heading as="h1" size="2xl" textAlign="center">
+          All About Apples
+        </Heading>
+        <Box>
+          <Heading as="h2" size="lg" mb={4}>
+            Where Apples Grow
+          </Heading>
+          <Text>
+            Apples are grown in orchards all around the world. The top apple-producing countries include China, the United States, Poland, and India. Apples thrive in temperate climates and are typically harvested in the fall.
+          </Text>
+        </Box>
+        <Box>
+          <Heading as="h2" size="lg" mb={4}>
+            History of Apples
+          </Heading>
+          <Text>
+            Apples have been cultivated for thousands of years. They originated in Central Asia and were brought to North America by European colonists. Today, there are thousands of apple varieties, each with its own unique flavor and characteristics.
+          </Text>
+        </Box>
       </VStack>
     </Container>
   );
