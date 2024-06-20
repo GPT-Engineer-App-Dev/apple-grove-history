@@ -1,4 +1,4 @@
-import { Container, Text, VStack, Heading, Box } from "@chakra-ui/react";
+import { Container, Text, VStack, Heading, Box, Image } from "@chakra-ui/react";
 
 const Index = () => {
   return (
@@ -7,6 +7,9 @@ const Index = () => {
         <Heading as="h1" size="2xl" textAlign="center">
           All About Apples
         </Heading>
+        <Box>
+          <Image src="/images/apple-orchard.jpg" alt="Apple Orchard" borderRadius="md" />
+        </Box>
         <Box>
           <Heading as="h2" size="lg" mb={4}>
             Where Apples Grow
