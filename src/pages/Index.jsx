@@ -1,30 +1,25 @@
-import { Container, Text, VStack, Heading, Box } from "@chakra-ui/react";
+import { Box, Container, Text, VStack, Heading } from "@chakra-ui/react";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" py={10}>
-      <VStack spacing={8}>
-        <Heading as="h1" size="2xl" textAlign="center">
-          All About Apples
-        </Heading>
-        <Box>
-          <Heading as="h2" size="lg" mb={4}>
-            Where Apples Grow
-          </Heading>
-          <Text>
-            Apples are grown in orchards all around the world. The top apple-producing countries include China, the United States, Poland, and India. Apples thrive in temperate climates and are typically harvested in the fall.
-          </Text>
-        </Box>
-        <Box>
-          <Heading as="h2" size="lg" mb={4}>
-            History of Apples
-          </Heading>
-          <Text>
-            Apples have been cultivated for thousands of years. They originated in Central Asia and were brought to North America by European colonists. Today, there are thousands of apple varieties, each with its own unique flavor and characteristics.
-          </Text>
-        </Box>
-      </VStack>
-    </Container>
+    <Box>
+      <Box as="header" bg="brand.700" color="white" py={4}>
+        <Container maxW="container.md">
+          <Heading as="h1" size="lg">Apple Information</Heading>
+        </Container>
+      </Box>
+      <Container centerContent maxW="container.md" py={8}>
+        <VStack spacing={4}>
+          <Heading as="h2" size="md">Welcome to the Apple Information Site</Heading>
+          <Text fontSize="lg">Learn about where apples grow and their history.</Text>
+        </VStack>
+      </Container>
+      <Box as="footer" bg="brand.700" color="white" py={4} mt="auto">
+        <Container maxW="container.md">
+          <Text>&copy; 2023 Apple Information. All rights reserved.</Text>
+        </Container>
+      </Box>
+    </Box>
   );
 };
 
